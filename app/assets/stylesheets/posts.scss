@@ -25,6 +25,8 @@
   margin: auto;
   overflow: scroll;
   padding-top: 50px;
+  box-shadow: 0 0 8px gray;
+  background-color: white;
 
   &__list{
     width: 100%;
@@ -55,7 +57,7 @@
   &__list2{
     width: 100%;
     height: 400px;
-    background-color: pink;
+    margin-bottom: 100px;
     display: flex;
     justify-content:space-around;
     
