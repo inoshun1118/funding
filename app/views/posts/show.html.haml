@@ -1,11 +1,22 @@
 .project-title
   = @post.title
 
-.project-contents
-  .project-contents__image
-  .project-contents__textbox
-    .text
-      = @post.text
+.project-detail
+  .project-contents
+    .project-contents__image
+    .project-contents__textbox
+      .text
+        = @post.text
+
+  .Current-status
+    .total 
+      現在の支援総額
+      .total__money 30,000,000円
+
+    .supporter
+      支援者数
+      .supporter__n 3,600人
+
 
 .money-support
   .money-support__yen
@@ -13,3 +24,4 @@
     %input{class: ".radio-btn", type: "radio", value: "0"}1000円
     %input{class: ".radio-btn", type: "radio", value: "0"}1500円
   .money-support__btn 支援する
+
