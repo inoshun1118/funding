@@ -1,23 +1,41 @@
 .project-title{
   font-size: 80px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
-.project-contents{
+.project-detail{
   display: flex;
-  &__image{
-    height: 300px;
-    width: 450px;
-    margin-top: 120px;
-    margin-left: 80px;
-    background-image: url(https://contents.oricon.co.jp/upimg/news/20190531/2136578_201905310081821001559250031c.jpg);
+
+  .project-contents{
+    display: flex;
+    &__image{
+      height: 300px;
+      width: 450px;
+      margin-top: 60px;
+      margin-left: 80px;
+      background-image: url(https://contents.oricon.co.jp/upimg/news/20190531/2136578_201905310081821001559250031c.jpg);
+    }
+    &__textbox{
+      height: 300px;
+      width: 400px;
+      margin-top: 50px;
+      margin-left: 30px;
+      .text{
+        font-size: 30px;
+      }
+    }
   }
-  &__textbox{
-    height: 300px;
-    width: 400px;
+
+  .Current-status{
     margin-top: 100px;
     margin-left: 30px;
-    .text{
-      font-size: 30px;
+    .total {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+    .supporter {
+      font-size: 50px;
     }
   }
 }
