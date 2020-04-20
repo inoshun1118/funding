@@ -1,0 +1,45 @@
+.project-title{
+  font-size: 80px;
+}
+
+.project-contents{
+  display: flex;
+  &__image{
+    height: 300px;
+    width: 450px;
+    margin-top: 120px;
+    margin-left: 80px;
+    background-image: url(https://contents.oricon.co.jp/upimg/news/20190531/2136578_201905310081821001559250031c.jpg);
+  }
+  &__textbox{
+    height: 300px;
+    width: 400px;
+    margin-top: 100px;
+    margin-left: 30px;
+    .text{
+      font-size: 30px;
+    }
+  }
+}
+
+.money-support{
+  height: 100px;
+  width: 600px;
+  margin-top: 40px;
+  margin-left: 40px;
+  display: flex;
+  &__yen{
+    .radio-btn{
+    }
+  }
+  &__btn{
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin-left: 30px;
+    color: white;
+    background-color: #38aef0;
+    cursor: pointer;
+  }
+}

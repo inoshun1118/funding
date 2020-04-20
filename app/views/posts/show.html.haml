@@ -1,0 +1,15 @@
+.project-title
+  = @post.title
+
+.project-contents
+  .project-contents__image
+  .project-contents__textbox
+    .text
+      = @post.text
+
+.money-support
+  .money-support__yen
+    %input{class: ".radio-btn", type: "radio", value: "0"}500円
+    %input{class: ".radio-btn", type: "radio", value: "0"}1000円
+    %input{class: ".radio-btn", type: "radio", value: "0"}1500円
+  .money-support__btn 支援する
