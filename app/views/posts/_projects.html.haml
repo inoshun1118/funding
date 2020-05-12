@@ -1,31 +1,8 @@
 .projects-main
   .projects-main__list
-    .project
-      = link_to "http://localhost:3000/posts/1" do
-        .project__image
-        .project__title
-          男の子でもプリキュアになりたい
-    .project2
-      = link_to "http://localhost:3000/posts/2" do
-        .project2__image2
-        .project2__title2
-          明日から本気出す
-    .project3
-      = link_to "http://localhost:3000/posts/3" do
-        .project3__image3
-        .project3__title3
-          test
+    - @posts.each do |post|
+      .project
+        = link_to post_path(post.id) do
+          .project__image
+          .project__title
 
-  .projects-main__list2
-    .project2-1
-      .project2-1__image
-      .project2-1__title
-        test
-    .project2-2
-      .project2-2__image2
-      .project2-2__title2
-        test
-    .project2-3
-      .project2-3__image3
-      .project2-3__title3
-        test
