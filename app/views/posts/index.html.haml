@@ -1,3 +1,13 @@
-.wrapper
-  = render "header"
-  = render "projects"
+.top-header
+  プロジェクトを探す
+
+.projects-main
+  .projects-main__list
+    - @posts.each do |post|
+      .project
+        = link_to post_path(post.id) do
+          .project__image
+            = post.image
+          .project__title
+            = post.title
+
