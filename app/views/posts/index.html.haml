@@ -1,14 +1,18 @@
-.top-header
-  プロジェクトを探す
+.wrapper
+  .top-header
+    プロジェクトを探す
 
-.projects-main
-  .projects-main__list
-    - @posts.each do |post|
-      .project
-        = link_to post_path(post.id) do
-          .project__image
-            = post.image
-          .project__title
-            = post.title
+  .projects-main
+    .projects-main__list
+      - @posts.each do |post|
+        .project
+          = link_to post_path(post.id) do
+            .project__image
+              = post.image
+            .project__title
+              = post.title
 
-.new-project-btn
+  .top-footer
+    = link_to "プロジェクトを作る", new_post_path, class: "new-project-btn"
+      
+
