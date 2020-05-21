@@ -1,6 +1,10 @@
-.content__title
-  新規記事の作成
-= form_with model: @post, class: :form, local: true do |form|
-  = form.text_field :title, placeholder: :タイトル, class: :form__title
-  = form.text_area :content, placeholder: :ブログ本文, class: :form__text
-  = form.submit '投稿する', class: :form__btn
+.new-project
+  プロジェクトを作る
+
+.project-form
+  = form_for [@post], html: {class: 'project-form__new'} do |f|
+    .input-box
+      = f.text_field :title, class: 'input-box__title', placeholder: 'タイトル'
+      = f.text_field :text, class: 'input-box__text', placeholder: '説明文'
+      = f.file_field :image, class: 'hidden'
+    = f.submit 'Send', class: 'submit-btn'
