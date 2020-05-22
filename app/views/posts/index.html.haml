@@ -7,8 +7,8 @@
       - @posts.each do |post|
         .project
           = link_to post_path(post.id) do
-            .project__image
-              = post.image
+            .project__image-box
+              = image_tag post.image.url, class: 'project-image'
             .project__title
               = post.title
 
