@@ -4,7 +4,7 @@
 .project-detail
   .project-contents
     .project-contents__image
-      = @post.image
+      = image_tag @post.image.url
     .project-contents__textbox
       .text
         = @post.text

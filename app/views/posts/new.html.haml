@@ -1,2 +1,10 @@
 .new-project
   プロジェクトを作る
+
+.project-form
+  = form_for [@post], html: {class: 'project-form__new'} do |f|
+    .input-box
+      = f.text_field :title, class: 'input-box__title', placeholder: 'タイトル'
+      = f.text_field :text, class: 'input-box__text', placeholder: '説明文'
+      = f.file_field :image, class: 'hidden'
+    = f.submit 'Send', class: 'submit-btn'
