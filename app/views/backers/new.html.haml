@@ -1,0 +1,6 @@
+.money-form
+  = form_for [@backer], html: {class: 'money-form__new'} do |f|
+    .input-box-money
+      = f.text_field :address, class: 'input-box-money__address', placeholder: '住所'
+      = f.number_field :money_value, class: 'input-box-money__value', placeholder: '支援額'
+    = f.submit 'Send', class: 'submit-btn'
