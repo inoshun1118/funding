@@ -14,6 +14,7 @@
               = post.title
 
   .top-footer
-    = link_to "プロジェクトを作る", new_post_path, class: "new-project-btn"
+    - if user_signed_in?
+      = link_to "プロジェクトを作る", new_post_path, class: "new-project-btn"
       
 
