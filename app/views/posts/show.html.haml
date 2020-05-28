@@ -12,11 +12,13 @@
   .Current-status
     .total 
       現在の支援総額
-      .total__money 30,000,000円
+      .total__money
+        = Backer.where(post_id: @post.id).sum(:money_value)
 
     .supporter
       支援者数
-      .supporter__n 3人
+      .supporter__n
+        人
 
 
 .money-support
