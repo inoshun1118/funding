@@ -10,6 +10,6 @@ class BackersController < ApplicationController
 
   private
   def backer_params
-    params.require(:backer).permit(:address, :money_value).merge(user_id: current_user.id)
+    params.require(:backer).permit(:address, :money_value).merge(user_id: current_user.id, post_id: params[:post_id])
   end
 end
