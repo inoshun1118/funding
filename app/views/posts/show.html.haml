@@ -13,7 +13,7 @@
     .total 
       現在の支援総額
       .total__money
-        = Backer.where(post_id: @post.id).sum(:money_value)
+        = Backer.where(post_id: @post.id).sum(:money_value).to_i
         円
 
     .supporter
