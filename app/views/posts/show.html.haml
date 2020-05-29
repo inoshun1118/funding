@@ -13,12 +13,14 @@
     .total-money
       現在の支援総額
       .total-money__value
-        = @total_money
+        = @total_money.to_i
         円
     .target-money-value
       目標額
       = @post.target_value
       円
+      = @proportion.floor(0)
+      ％
 
     .supporter
       支援者数

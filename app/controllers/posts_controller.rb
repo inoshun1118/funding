@@ -10,8 +10,9 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
-    @total_money = Backer.where(post_id: @post.id).sum(:money_value).to_i
+    @total_money = Backer.where(post_id: @post.id).sum(:money_value)
     @supporters = Backer.where(post_id: @post.id).count(:money_value)
+    @proportion = (@total_money.to_f / Post.where(id: @post.id).sum(:target_value).to_f) * 100
   end
 
   def create
