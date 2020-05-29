@@ -10,6 +10,8 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
+    @total_money = Backer.where(post_id: @post.id).sum(:money_value).to_i
+    @supporters = Backer.where(post_id: @post.id).count(:money_value)
   end
 
   def create
@@ -23,7 +25,7 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:title, :text, :image)
+    params.require(:post).permit(:title, :text, :image, :target_value)
   end
 
 end

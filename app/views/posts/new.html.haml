@@ -6,5 +6,6 @@
     .input-box
       = f.text_field :title, class: 'input-box__title', placeholder: 'タイトル'
       = f.text_field :text, class: 'input-box__text', placeholder: '説明文'
+      = f.number_field :target_value, class: 'input-box__target', placeholder: '目標金額'
       = f.file_field :image, class: 'hidden'
     = f.submit 'Send', class: 'submit-btn'

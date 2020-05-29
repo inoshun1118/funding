@@ -9,17 +9,21 @@
       .text
         = @post.text
 
-  .Current-status
-    .total 
+  .current-status
+    .total-money
       現在の支援総額
-      .total__money
-        = Backer.where(post_id: @post.id).sum(:money_value).to_i
+      .total-money__value
+        = @total_money
         円
+    .target-money-value
+      目標額
+      = @post.target_value
+      円
 
     .supporter
       支援者数
-      .supporter__n
-        = Backer.where(post_id: @post.id).count(:money_value)
+      .supporters
+        = @supporters
         人
 
 
