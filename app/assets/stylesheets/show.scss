@@ -33,6 +33,18 @@
       font-size: 50px;
       margin-bottom: 20px;
     }
+    .target-money-value{
+      .gage{
+        position: relative;
+        .percentage{
+          position: absolute;
+        }
+        .money-meter{
+          width: 300px;
+          height: 35px;
+        }
+      }
+    }
     .supporter {
       font-size: 50px;
     }

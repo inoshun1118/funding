@@ -19,8 +19,11 @@
       目標額
       = @post.target_value
       円
-      = @proportion.floor(0)
-      ％
+      .gage
+        .percentage
+          = @proportion.floor(0)
+          ％
+        %meter{value: @proportion, max: 100, class: "money-meter"}
 
     .supporter
       支援者数
