@@ -1,0 +1,4 @@
+.return-form
+  = form_for [@return], url: post_returns_path, html: {class: 'return-form__new'} do |f|
+    .input-box
+      = f.text_field :return_text, class: 'input-box__return_text'
