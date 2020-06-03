@@ -1,6 +1,7 @@
 class BackersController < ApplicationController
   def new
     @backer = Backer.new
+    @return = Return.where(post_id: "post_id")
   end
 
   def create

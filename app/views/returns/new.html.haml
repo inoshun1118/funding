@@ -2,3 +2,5 @@
   = form_for [@return], url: post_returns_path, html: {class: 'return-form__new'} do |f|
     .input-box
       = f.text_field :return_text, class: 'input-box__return_text'
+      = f.file_field :return_image, class: 'return_image-hidden'
+    = f.submit 'Send', class: 'submit-btn'

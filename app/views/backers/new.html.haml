@@ -1,4 +1,5 @@
 .money-form
+
   = form_for [@backer], url: post_backers_path, html: {class: 'money-form__new'} do |f|
     .input-box-money
       = f.text_field :address, class: 'input-box-money__address', placeholder: '住所'
