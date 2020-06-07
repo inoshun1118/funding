@@ -6,16 +6,16 @@
 }
 
 .head-image{
-  width: 1000px;
-  height: 300px;
+  width: 100vw;
+  height: 400px;
   background-position: center;
+  object-fit: cover;
   background-image: url('back2.jpg');
   text-align: center;
   font-size: 30px;
   font-weight: bold;
-  line-height: 300px;
+  line-height: 400px;
   color: white;
-  margin: auto;
 }
 
 
