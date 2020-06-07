@@ -162,23 +162,24 @@ legend {
   position: relative;
   padding-bottom: 200px;
   box-sizing: border-box;
+  background-color: #ddd;
 }
 
-/* line 8, /Users/inoshun/projects/funding/app/assets/stylesheets/index.scss */
+/* line 9, /Users/inoshun/projects/funding/app/assets/stylesheets/index.scss */
 .head-image {
-  width: 1000px;
-  height: 300px;
+  width: 100vw;
+  height: 400px;
   background-position: center;
-  background-image: url("back.jpg");
+  object-fit: cover;
+  background-image: url("back2.jpg");
   text-align: center;
   font-size: 30px;
   font-weight: bold;
-  line-height: 300px;
+  line-height: 400px;
   color: white;
-  margin: auto;
 }
 
-/* line 22, /Users/inoshun/projects/funding/app/assets/stylesheets/index.scss */
+/* line 23, /Users/inoshun/projects/funding/app/assets/stylesheets/index.scss */
 .projects-main {
   width: 1200px;
   height: 1500px;
@@ -186,9 +187,8 @@ legend {
   left: 0;
   right: 0;
   bottom: 0;
-  margin: auto;
+  margin: 50px auto;
   overflow: scroll;
-  box-shadow: 0 0 8px gray;
   background-color: white;
 }
 /* line 34, /Users/inoshun/projects/funding/app/assets/stylesheets/index.scss */
@@ -199,22 +199,29 @@ legend {
   justify-content: space-around;
   flex-wrap: wrap;
 }
-/* line 40, /Users/inoshun/projects/funding/app/assets/stylesheets/index.scss */
+/* line 41, /Users/inoshun/projects/funding/app/assets/stylesheets/index.scss */
 .projects-main__list .project {
   width: 30%;
   height: 100%;
   box-shadow: 0 0 8px gray;
   margin-top: 50px;
+  border-radius: 5px;
 }
-/* line 45, /Users/inoshun/projects/funding/app/assets/stylesheets/index.scss */
+/* line 48, /Users/inoshun/projects/funding/app/assets/stylesheets/index.scss */
 .projects-main__list .project__image-box {
   margin: auto;
-  background-position: center;
   height: 250px;
   width: 100%;
   margin-bottom: 20px;
 }
-/* line 52, /Users/inoshun/projects/funding/app/assets/stylesheets/index.scss */
+/* line 54, /Users/inoshun/projects/funding/app/assets/stylesheets/index.scss */
+.projects-main__list .project__image-box .project-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 5px 0 0;
+}
+/* line 61, /Users/inoshun/projects/funding/app/assets/stylesheets/index.scss */
 .projects-main__list .project__title {
   height: 110px;
   width: calc(100% - 10px);
@@ -225,111 +232,178 @@ legend {
   margin: auto;
   text-align: center;
   font-size: 30px;
+  text-decoration: underline white;
 }
 
-/* line 67, /Users/inoshun/projects/funding/app/assets/stylesheets/index.scss */
-.top-footer {
+/* line 77, /Users/inoshun/projects/funding/app/assets/stylesheets/index.scss */
+.main-footer {
   width: 100%;
-  height: 200px;
+  height: 100px;
   position: absolute;
   bottom: 0;
-}
-/* line 72, /Users/inoshun/projects/funding/app/assets/stylesheets/index.scss */
-.top-footer .new-project-btn {
-  display: block;
-  width: 300px;
-  height: 50px;
-  font-size: 16px;
-  text-align: center;
-  line-height: 50px;
-  margin: 70px auto;
+  background-color: #282828;
 }
 
 /* line 1, /Users/inoshun/projects/funding/app/assets/stylesheets/show.scss */
 .project-title {
-  font-size: 80px;
-  margin-top: 20px;
-  margin-left: 20px;
+  font-size: 35px;
+  margin-top: 40px;
+  text-align: center;
+  font-weight: bold;
 }
 
-/* line 7, /Users/inoshun/projects/funding/app/assets/stylesheets/show.scss */
+/* line 8, /Users/inoshun/projects/funding/app/assets/stylesheets/show.scss */
 .project-detail {
   display: flex;
+  width: 1300px;
+  height: 450px;
+  margin: 0px auto;
 }
-/* line 10, /Users/inoshun/projects/funding/app/assets/stylesheets/show.scss */
-.project-detail .project-contents {
-  display: flex;
-}
-/* line 12, /Users/inoshun/projects/funding/app/assets/stylesheets/show.scss */
-.project-detail .project-contents__image {
-  height: 300px;
-  width: 450px;
+/* line 14, /Users/inoshun/projects/funding/app/assets/stylesheets/show.scss */
+.project-detail__image {
+  height: 350px;
+  width: 500px;
   margin-top: 60px;
-  margin-left: 80px;
+  margin-left: 120px;
 }
-/* line 18, /Users/inoshun/projects/funding/app/assets/stylesheets/show.scss */
-.project-detail .project-contents__textbox {
-  height: 300px;
-  width: 400px;
-  margin-top: 50px;
-  margin-left: 30px;
+/* line 19, /Users/inoshun/projects/funding/app/assets/stylesheets/show.scss */
+.project-detail__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
 }
-/* line 23, /Users/inoshun/projects/funding/app/assets/stylesheets/show.scss */
-.project-detail .project-contents__textbox .text {
-  font-size: 30px;
-}
-/* line 29, /Users/inoshun/projects/funding/app/assets/stylesheets/show.scss */
+/* line 27, /Users/inoshun/projects/funding/app/assets/stylesheets/show.scss */
 .project-detail .current-status {
-  margin-top: 100px;
-  margin-left: 30px;
+  width: 600px;
+  height: 400px;
+  margin-top: 50px;
+  margin-left: 60px;
 }
-/* line 32, /Users/inoshun/projects/funding/app/assets/stylesheets/show.scss */
-.project-detail .current-status .total-money {
-  font-size: 50px;
-  margin-bottom: 20px;
+/* line 33, /Users/inoshun/projects/funding/app/assets/stylesheets/show.scss */
+.project-detail .current-status .total-money__value {
+  font-size: 40px;
+  font-weight: bold;
 }
-/* line 37, /Users/inoshun/projects/funding/app/assets/stylesheets/show.scss */
+/* line 39, /Users/inoshun/projects/funding/app/assets/stylesheets/show.scss */
 .project-detail .current-status .target-money-value .gage {
   position: relative;
 }
-/* line 39, /Users/inoshun/projects/funding/app/assets/stylesheets/show.scss */
+/* line 41, /Users/inoshun/projects/funding/app/assets/stylesheets/show.scss */
 .project-detail .current-status .target-money-value .gage .percentage {
   position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
 }
-/* line 42, /Users/inoshun/projects/funding/app/assets/stylesheets/show.scss */
+/* line 46, /Users/inoshun/projects/funding/app/assets/stylesheets/show.scss */
 .project-detail .current-status .target-money-value .gage .money-meter {
-  width: 300px;
-  height: 35px;
+  width: 350px;
+  height: 45px;
 }
-/* line 48, /Users/inoshun/projects/funding/app/assets/stylesheets/show.scss */
-.project-detail .current-status .supporter {
-  font-size: 50px;
-}
-
 /* line 54, /Users/inoshun/projects/funding/app/assets/stylesheets/show.scss */
-.money-support {
-  height: 100px;
-  width: 600px;
-  margin-top: 40px;
-  margin-left: 40px;
+.project-detail .current-status .supporter .number_of_supporters {
+  font-size: 40px;
+  font-weight: bold;
 }
-/* line 59, /Users/inoshun/projects/funding/app/assets/stylesheets/show.scss */
-.money-support__btn {
+/* line 60, /Users/inoshun/projects/funding/app/assets/stylesheets/show.scss */
+.project-detail .current-status .money-support-btn {
   display: block;
-  width: 100px;
-  height: 50px;
+  width: 400px;
+  height: 70px;
   text-align: center;
-  line-height: 50px;
+  line-height: 70px;
   margin-left: 30px;
+  margin-top: 30px;
   color: white;
   background-color: #38aef0;
-  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* line 76, /Users/inoshun/projects/funding/app/assets/stylesheets/show.scss */
+.project-textbox {
+  height: 300px;
+  width: 1300px;
+  margin: 30px auto;
+  font-size: 30px;
+}
+/* line 81, /Users/inoshun/projects/funding/app/assets/stylesheets/show.scss */
+.project-textbox .text {
+  font-size: 25px;
+  margin-left: 50px;
+  margin-top: 20px;
 }
 
 /* line 1, /Users/inoshun/projects/funding/app/assets/stylesheets/main_header.scss */
 .main-header {
   width: 100vw;
   height: 70px;
+  border-bottom: #ddd solid 1px;
+}
+/* line 6, /Users/inoshun/projects/funding/app/assets/stylesheets/main_header.scss */
+.main-header__contents {
+  height: 100%;
+  width: 400px;
+  display: flex;
+  margin-left: auto;
+  margin-right: 100px;
+}
+/* line 12, /Users/inoshun/projects/funding/app/assets/stylesheets/main_header.scss */
+.main-header__contents__top {
+  height: 100%;
+  width: 25%;
+  display: block;
+  text-align: center;
+  line-height: 70px;
+  text-decoration: none;
+  color: black;
+  border-left: #ddd solid 1px;
+}
+/* line 22, /Users/inoshun/projects/funding/app/assets/stylesheets/main_header.scss */
+.main-header__contents__log-out {
+  height: 100%;
+  width: 25%;
+  display: block;
+  text-align: center;
+  line-height: 70px;
+  text-decoration: none;
+  color: black;
+  border-right: #ddd solid 1px;
+  border-left: #ddd solid 1px;
+}
+/* line 33, /Users/inoshun/projects/funding/app/assets/stylesheets/main_header.scss */
+.main-header__contents__new-project {
+  height: 100%;
+  width: 50%;
+  display: block;
+  text-align: center;
+  line-height: 70px;
+  text-decoration: none;
+  color: black;
+  border-right: #ddd solid 1px;
+}
+/* line 43, /Users/inoshun/projects/funding/app/assets/stylesheets/main_header.scss */
+.main-header__contents__log-in {
+  height: 100%;
+  width: 50%;
+  display: block;
+  text-align: center;
+  line-height: 70px;
+  text-decoration: none;
+  color: black;
+  border-right: #ddd solid 1px;
+  border-left: #ddd solid 1px;
+}
+/* line 54, /Users/inoshun/projects/funding/app/assets/stylesheets/main_header.scss */
+.main-header__contents__sign-up {
+  height: 100%;
+  width: 50%;
+  display: block;
+  text-align: center;
+  line-height: 70px;
+  text-decoration: none;
+  color: black;
+  border-right: #ddd solid 1px;
 }
 
 /* line 1, /Users/inoshun/projects/funding/app/assets/stylesheets/backer_new.scss */
