@@ -1,13 +1,10 @@
+= render partial: 'shared/main_header'
 .project-title
   = @post.title
 
 .project-detail
-  .project-contents
-    .project-contents__image
-      = image_tag @post.image.url
-    .project-contents__textbox
-      .text
-        = @post.text
+  .project-detail__image
+    = image_tag @post.image.url
 
   .current-status
     .total-money
@@ -27,11 +24,14 @@
 
     .supporter
       支援者数
-      .supporters
+      .number_of_supporters
         = @supporters
         人
 
+    = link_to "支援する", "/posts/#{@post.id}/backers/new", class: "money-support-btn"
 
-.money-support
-  = link_to "支援する", "/posts/#{@post.id}/backers/new", class: "money-support__btn"
+.project-textbox
+  プロジェクトの内容
+  .text
+    = @post.text
 

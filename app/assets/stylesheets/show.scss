@@ -1,70 +1,86 @@
 .project-title{
-  font-size: 80px;
-  margin-top: 20px;
-  margin-left: 20px;
+  font-size: 35px;
+  margin-top: 40px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .project-detail{
   display: flex;
+  width: 1300px;
+  height: 450px;
+  margin: 0px auto;
 
-  .project-contents{
-    display: flex;
-    &__image{
-      height: 300px;
-      width: 450px;
-      margin-top: 60px;
-      margin-left: 80px;
-    }
-    &__textbox{
-      height: 300px;
-      width: 400px;
-      margin-top: 50px;
-      margin-left: 30px;
-      .text{
-        font-size: 30px;
-      }
+  &__image{
+    height: 350px;
+    width: 500px;
+    margin-top: 60px;
+    margin-left: 120px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 5px;
     }
   }
 
   .current-status{
-    margin-top: 100px;
-    margin-left: 30px;
+    width: 600px;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: 60px;
     .total-money {
-      font-size: 50px;
-      margin-bottom: 20px;
+      &__value{
+        font-size: 40px;
+        font-weight: bold;
+      }
     }
     .target-money-value{
       .gage{
         position: relative;
         .percentage{
           position: absolute;
+          margin-top: 10px;
+          margin-left: 10px;
         }
         .money-meter{
-          width: 300px;
-          height: 35px;
+          width: 350px;
+          height: 45px;
         }
       }
     }
+
     .supporter {
-      font-size: 50px;
+      .number_of_supporters {
+        font-size: 40px;
+        font-weight: bold;
+      }
+    }
+
+    .money-support-btn{
+      display: block;
+      width: 400px;
+      height: 70px;
+      text-align: center;
+      line-height: 70px;
+      margin-left: 30px;
+      margin-top: 30px;
+      color: white;
+      background-color: #38aef0;
+      text-decoration: none;
+      border-radius: 5px;
     }
   }
 }
 
-.money-support{
-  height: 100px;
-  width: 600px;
-  margin-top: 40px;
-  margin-left: 40px;
-  &__btn{
-    display: block;
-    width: 100px;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    margin-left: 30px;
-    color: white;
-    background-color: #38aef0;
-    cursor: pointer;
+.project-textbox{
+  height: 300px;
+  width: 1300px;
+  margin: 30px auto;
+  font-size: 30px;
+  .text{
+    font-size: 25px;
+    margin-left: 50px;
+    margin-top: 20px;
   }
 }

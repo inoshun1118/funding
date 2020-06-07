@@ -1,4 +1,65 @@
 .main-header{
   width: 100vw;
   height: 70px;
+  border-bottom: #ddd solid 1px;
+
+  &__contents{
+    height: 100%;
+    width: 400px;
+    display: flex;
+    margin-left: auto;
+    margin-right: 100px;
+    &__top{
+      height: 100%;
+      width: 25%;
+      display: block;
+      text-align: center;
+      line-height: 70px;
+      text-decoration: none;
+      color: black;
+      border-left: #ddd solid 1px;
+    }
+    &__log-out{
+      height: 100%;
+      width: 25%;
+      display: block;
+      text-align: center;
+      line-height: 70px;
+      text-decoration: none;
+      color: black;
+      border-right: #ddd solid 1px;
+      border-left: #ddd solid 1px;
+    }
+    &__new-project{
+      height: 100%;
+      width: 50%;
+      display: block;
+      text-align: center;
+      line-height: 70px;
+      text-decoration: none;
+      color: black;
+      border-right: #ddd solid 1px;
+    }
+    &__log-in{
+      height: 100%;
+      width: 50%;
+      display: block;
+      text-align: center;
+      line-height: 70px;
+      text-decoration: none;
+      color: black;
+      border-right: #ddd solid 1px;
+      border-left: #ddd solid 1px;
+    }
+    &__sign-up{
+      height: 100%;
+      width: 50%;
+      display: block;
+      text-align: center;
+      line-height: 70px;
+      text-decoration: none;
+      color: black;
+      border-right: #ddd solid 1px;
+    }
+  }
 }
