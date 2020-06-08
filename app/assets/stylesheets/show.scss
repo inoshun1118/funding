@@ -10,6 +10,8 @@
   width: 1300px;
   height: 450px;
   margin: 0px auto;
+  border-radius: 5px;
+  border: #ddd solid 2px;
 
   &__image{
     height: 350px;
@@ -76,11 +78,16 @@
 .project-textbox{
   height: 300px;
   width: 1300px;
-  margin: 30px auto;
+  margin: 50px auto;
   font-size: 30px;
   .text{
+    height: 200px;
+    width: 1000px;
     font-size: 25px;
     margin-left: 50px;
     margin-top: 20px;
+    padding-left: 20px;
+    border: #ddd solid 2px;
+    border-radius: 5px;
   }
 }

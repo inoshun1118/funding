@@ -1,4 +1,22 @@
-.money-form{
-  width: 800px;
-  height: 100px;
+.backer-background{
+  padding-top: 50px;
+  background-color: #ddd;
+  .backer-form{
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    .input-box{
+      background-color: white;
+      &__country{
+        width: 400px;
+        height: 200px;
+        margin: 0 auto;
+      }
+      &__money_value{
+        width: 400px;
+        height: 200px;
+        margin: 0 auto;
+      }
+    }
+  }
 }

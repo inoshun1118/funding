@@ -1,7 +1,13 @@
-.money-form
-
-  = form_for [@backer], url: post_backers_path, html: {class: 'money-form__new'} do |f|
-    .input-box-money
-      = f.text_field :address, class: 'input-box-money__address', placeholder: '住所'
-      = f.number_field :money_value, class: 'input-box-money__value', placeholder: '支援額'
-    = f.submit 'Send', class: 'submit-btn'
+.head-image
+  支援する
+.backer-background
+  .backer-form
+    = form_for [@backer], url: post_backers_path, html: {class: 'money-form__new'} do |f|
+      .input-box
+        .input-box__country
+          %p 都道府県を入力してください
+          = f.text_field :address, class: 'input-box-money__address', placeholder: '例: 東京'
+        .input-box__money_value
+          %p 支援額を入力してください
+          = f.number_field :money_value, class: 'input-box-money__value'
+      = f.submit 'Send', class: 'submit-btn'
