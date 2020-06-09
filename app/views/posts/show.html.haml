@@ -27,8 +27,10 @@
       .number_of_supporters
         = @supporters
         人
-
-    = link_to "支援する", "/posts/#{@post.id}/backers/new", class: "money-support-btn"
+    - if user_signed_in?
+      = link_to "支援する", "/posts/#{@post.id}/backers/new", class: "money-support-btn"
+    - else
+      = link_to "支援する", "/users/sign_in", class: "money-support-btn"
 
 .project-textbox
   プロジェクトの内容
