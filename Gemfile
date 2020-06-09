@@ -58,3 +58,4 @@ gem 'mini_magick'
 gem 'rubocop', require: false
 gem 'devise'
 gem 'fog-aws'
+gem 'rails_12factor'
