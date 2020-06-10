@@ -59,4 +59,3 @@ gem 'rubocop', require: false
 gem 'devise'
 gem 'fog-aws'
 gem 'rails_12factor'
-gem 'dotenv-rails'
