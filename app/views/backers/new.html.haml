@@ -6,8 +6,8 @@
       .input-box
         .input-box__country
           %p 都道府県を入力してください
-          = f.text_field :address, class: 'input-box-money__address', placeholder: '例: 東京'
+          = f.text_field :address, class: 'input-box-money__address', placeholder: '例: 東京', required: ""
         .input-box__money_value
           %p 支援額を入力してください
-          = f.number_field :money_value, class: 'input-box-money__value'
+          = f.number_field :money_value, class: 'input-box-money__value', required: "", min: '500'
       = f.submit 'Send', class: 'submit-btn'

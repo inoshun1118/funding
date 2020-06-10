@@ -4,8 +4,8 @@
 .project-form
   = form_for [@post], html: {class: 'project-form__new'} do |f|
     .input-box
-      = f.text_field :title, class: 'input-box__title', placeholder: 'タイトル'
-      = f.text_field :text, class: 'input-box__text', placeholder: '説明文'
-      = f.number_field :target_value, class: 'input-box__target', placeholder: '目標金額'
-      = f.file_field :image, class: 'hidden'
+      = f.text_field :title, class: 'input-box__title', placeholder: 'タイトル', required: ""
+      = f.text_field :text, class: 'input-box__text', placeholder: '説明文', required: ""
+      = f.number_field :target_value, class: 'input-box__target', placeholder: '目標金額', min: '1000', required: ""
+      = f.file_field :image, class: 'hidden', required: ""
     = f.submit 'Send', class: 'submit-btn'
