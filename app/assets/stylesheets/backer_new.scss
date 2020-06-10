@@ -1,13 +1,15 @@
 .backer-background{
   padding-top: 50px;
   background-color: #ddd;
+  width: 100vw;
+  height: 1000px;
   .backer-form{
-    width: 1000px;
-    height: 600px;
+    width: 800px;
+    height: 800px;
     margin: 0 auto;
     .input-box{
       background-color: white;
-      &__country{
+      &__address{
         width: 400px;
         height: 200px;
         margin: 0 auto;
@@ -17,6 +19,16 @@
         height: 200px;
         margin: 0 auto;
       }
+    }
+    .submit-btn-backer{
+      display: block;
+      margin: 30px auto 0;
+      width: 120px;
+      height: 60px;
+      color: white;
+      background-color: #38aef0;
+      border: none;
+      border-radius: 5px;
     }
   }
 }

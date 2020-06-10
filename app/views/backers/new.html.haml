@@ -4,10 +4,10 @@
   .backer-form
     = form_for [@backer], url: post_backers_path, html: {class: 'money-form__new'} do |f|
       .input-box
-        .input-box__country
+        .input-box__address
           %p 都道府県を入力してください
-          = f.text_field :address, class: 'input-box-money__address', placeholder: '例: 東京', required: ""
+          = f.text_field :address, class: 'input-box__address__field', placeholder: '例: 東京', required: ""
         .input-box__money_value
           %p 支援額を入力してください
-          = f.number_field :money_value, class: 'input-box-money__value', required: "", min: '500'
-      = f.submit 'Send', class: 'submit-btn'
+          = f.number_field :money_value, class: 'input-box__money_value__field', required: "", min: '500'
+      = f.submit '支援する', class: 'submit-btn-backer'
