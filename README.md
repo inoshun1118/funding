@@ -1,7 +1,7 @@
 # README
 
 # アプリ名
-funding
+### Funding
 
 # 概要
 クラウドファンディングのプロジェクトを立ち上げたり、支援したりできます。
@@ -40,3 +40,47 @@ funding
 
 ## プロジェクトへ支援を行うことができます。
 
+ ## Users_table
+
+|Column|Type|Options|
+|------|----|-------|
+|email|string|null: false, default: ""|
+|encrypted_password|string|null: false, default: ""|
+|reset_password_token|string||
+|reset_password_sent_at|datetime||
+|remember_created_at|datetime||
+
+### Association
+
+- has_one :backer
+- has_many :posts
+
+
+ ## Posts_table
+
+|Column|Type|Options|
+|------|----|-------|
+|title|string||
+|text|string||
+|image|string||
+|target_value|string||
+
+### Association
+
+- belongs_to :user, optional: true
+- has_many :backers
+
+
+ ## Backers_table
+
+|Column|Type|Options|
+|------|----|-------|
+|address|string|null: false|
+|money_value|string|null: false|
+|user_id|integer|null: false, foreign_key: true|
+|post_id|integer|null: false, foreign_key: true|
+
+### Association
+
+- belongs_to :user
+- belongs_to :post
