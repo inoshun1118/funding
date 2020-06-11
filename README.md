@@ -33,7 +33,7 @@
 ![トップ画像](app/assets/images/index.png)
 
 ## 新規プロジェクトを作成できます
-![新規プロジェクト画像](app/assets/images/posts_new.png)
+![プロジェクト作成画像](app/assets/images/posts_new.png)
 
 ## プロジェクトの詳細が確認できます。目標達成率や支援者数が確認できます。
 ![詳細画像](app/assets/images/posts_show.png)
